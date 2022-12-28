@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@800&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo Mono", monospace;
+}
+
+body {
+  background-image: url("Mapa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+button {
+  background-color: transparent;
+  padding: 10px;
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+}
+button:hover {
+  border-bottom: 2px inset white;
+}
+.ImgLogo {
+  width: 200px;
+  height: 70%;
+}
+
+.main-Container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.Inf {
+  width: 60vw;
+  display: flex;
+  margin-left: 250px;
+  padding-bottom: 200px;
+  flex-direction: column;
+  justify-content: center;
+}
+.Inf > span {
+  font-size: 45px;
+  color: black;
+}
+h1 {
+  color: #d0a85b;
+  font-size: 70px;
+  padding-bottom: 25px;
+}
+.Inf > p {
+  color: black;
+  font-size: 17px;
+}
+
+.ButtonPlay {
+  background-color: #d0a85b;
+  margin-top: 50px;
+  padding: 20px;
+  width: 30vw;
+  color: white;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.ButtonPlay:hover {
+  color: black;
+  background-color: aliceblue;
+  transition: 0, 8s;
+}
+.Campeao {
+  width: 100vw;
+  height: 100vh;
+
+  flex: 1;
+}
+.Campeao > img {
+  height: 850px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  header {
+    width: 120%;
+  }
+  .Campeao > img {
+    height: 650px;
+  }
+  .ButtonPlay {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    width: 140%;
+  }
+  .Campeao > img {
+    height: 550px;
+  }
+  .Campeao {
+    width: 30vw;
+  }
+  .ButtonPlay {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    width: 180%;
+  }
+  .Campeao {
+    width: 30vw;
+  }
+  .ButtonPlay {
+    width: 100%;
+  }
+}
+@media (max-width: 515px) {
+  header {
+    width: 220%;
+  }
+  .Campeao > img {
+    height: 550px;
+  }
+  .Campeao {
+    margin-left: 200px;
+  }
+  .ButtonPlay {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    width: 250%;
+  }
+  .ButtonPlay {
+    width: 100%;
+  }
+}
